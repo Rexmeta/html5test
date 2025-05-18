@@ -6,50 +6,50 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/compare.html",
-      "dest": "/compare/browser/index.html"
+      "source": "/compare.html",
+      "destination": "/compare/browser/index.html"
     },
     {
-      "src": "/results.html",
-      "dest": "/results/desktop.html"
+      "source": "/results.html",
+      "destination": "/results/desktop.html"
     },
     {
-      "src": "/results-mobile.html",
-      "dest": "/results/mobile.html"
+      "source": "/results-mobile.html",
+      "destination": "/results/mobile.html"
     },
     {
-      "src": "/results-tablets.html",
-      "dest": "/results/tablet.html"
+      "source": "/results-tablets.html",
+      "destination": "/results/tablet.html"
     },
     {
-      "src": "/results-tv.html",
-      "dest": "/results/television.html"
+      "source": "/results-tv.html",
+      "destination": "/results/television.html"
     },
     {
-      "src": "/favicon(.*)",
-      "dest": "/images/icons/favicon$1"
+      "source": "/favicon(.*)",
+      "destination": "/images/icons/favicon$1"
     },
     {
-      "src": "/apple-touch-icon(.*)",
-      "dest": "/images/icons/apple-touch-icon$1"
+      "source": "/apple-touch-icon(.*)",
+      "destination": "/images/icons/apple-touch-icon$1"
     },
     {
-      "src": "/mstile-(.*)",
-      "dest": "/images/icons/mstile-$1"
+      "source": "/mstile-(.*)",
+      "destination": "/images/icons/mstile-$1"
     },
     {
-      "src": "/browserconfig.xml",
-      "dest": "/images/icons/browserconfig.xml"
+      "source": "/browserconfig.xml",
+      "destination": "/images/icons/browserconfig.xml"
     },
     {
-      "src": "/scripts/useragents",
-      "dest": "http://api.whichbrowser.net/warning.js"
+      "source": "/scripts/useragents",
+      "destination": "http://api.whichbrowser.net/warning.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/(.*)",
+      "destination": "/$1"
     }
   ],
   "headers": [
