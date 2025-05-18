@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/compare.html",
+      "dest": "/compare/browser/index.html"
+    },
+    {
+      "src": "/results.html",
+      "dest": "/results/desktop.html"
+    },
+    {
+      "src": "/results-mobile.html",
+      "dest": "/results/mobile.html"
+    },
+    {
+      "src": "/results-tablets.html",
+      "dest": "/results/tablet.html"
+    },
+    {
+      "src": "/results-tv.html",
+      "dest": "/results/television.html"
+    },
+    {
+      "src": "/favicon(.*)",
+      "dest": "/images/icons/favicon$1"
+    },
+    {
+      "src": "/apple-touch-icon(.*)",
+      "dest": "/images/icons/apple-touch-icon$1"
+    },
+    {
+      "src": "/mstile-(.*)",
+      "dest": "/images/icons/mstile-$1"
+    },
+    {
+      "src": "/browserconfig.xml",
+      "dest": "/images/icons/browserconfig.xml"
+    },
+    {
+      "src": "/scripts/useragents",
+      "dest": "http://api.whichbrowser.net/warning.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/\\.(woff|eot|svg|ttf)$",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/detect.html",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/upgrade",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+} 
